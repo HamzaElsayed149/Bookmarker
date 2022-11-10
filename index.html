@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKMARK</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container border-bottom  mx-auto pt-5 mb-5 w-75">
+        <h1 class=" text-black-50 fw-bolder">Bookmarker        </h1>
+
+    </div>
+
+    <div class="container   mx-auto pt-5 text-center bg-secondary bg-opacity-25 mb-3 ">
+        <h3 class=" ">Bookmark your favorite sites        </h3>
+        <div class="w-50 mx-auto py-4">
+            <div class="form-group mb-3">
+                <label for="Site Name " class="mb-2 fw-bolder">Site Name </label>
+                <input type="text" class=" form-control mb-2" id="Site Name" placeholder="Bookmark Name" oninput="rename()">
+                <p class=" text-danger fw-bolder bg-danger bg-opacity-50 rounded-2 shadow-sm d-none" id="namefield">Name is required</p>
+                <p class=" text-danger fw-bolder bg-danger bg-opacity-50 rounded-2 shadow-sm d-none" id="correct">this Name already exist</p>
+            </div>
+            <div class="form-group mb-3">
+                <label for="Site URL" class="mb-2 fw-bolder">Site URL</label>
+                <input type="text" class=" form-control mb-2" id="Site URL" placeholder="Website URL">
+                <p class=" text-danger fw-bolder bg-danger bg-opacity-50 rounded-2 shadow-sm d-none"  id="urlfield">Url Field is required </p>
+                <p class=" text-danger fw-bolder bg-danger bg-opacity-50 rounded-2 shadow-sm d-none"  id="urlvalid">Url is not valid </p>
+
+            </div>
+
+            <button class="btn btn-primary" id="mainbtn" onclick="addUrl ()">Submit</button>
+            
+            </div>
+      
+    </div>
+
+    <div class="container    mx-auto py-4 text-start bg-secondary bg-opacity-25  mb-5"  >
+<table class="table text-center ">
+    <tbody id="display">
+        
+    </tbody>
+</table>
+ 
+
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>
